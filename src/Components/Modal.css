@@ -1,0 +1,20 @@
+
+
+.modal-grid{
+    
+    display: grid;
+    grid-template-columns: 0.2fr 0.6fr 0.1fr 0.1fr;
+   
+    padding-top: 0%;
+    align-items: center;
+   
+}
+
+.modal-grid>*{
+    padding-right: 2rem;
+}
+
+.modal-header{
+
+    padding-top: 1rem;
+}

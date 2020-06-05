@@ -1,0 +1,16 @@
+input:invalid {
+    border: red solid 3px !important;
+  }
+
+  .searchbar{
+
+    margin-top: 50px;
+    z-index: 5;
+  }
+
+
+  .searchbar-item{
+    display: grid;
+    grid-template-columns: 0.6fr 0.2fr 0.2fr;
+    gap: 1rem;
+  }
