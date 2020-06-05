@@ -16,26 +16,19 @@ class App extends React.Component {
 
     //function to handle search querry i.e. when 'search by ID' button is pressed.
     onSearchQuerry =  (term) => {
-        // if only there is a search term
-        if(term!==''){
 
-            // make call to server
+        if(term!==''){
+            
                 this.makeApiCall(term);
 
-            //store the search term in a state it will be used for pagination.
-            //everytime there is a new search reset data sorting state back to empty
-            //set showSummaryView state to true, this allows shipment detail to be more compact.
-                this.setState({ searchTerm:term,sortedRecord:[],showSummaryView:true})
+                this.setState({ searchTerm:term,sortedRecord:[]})
             }
         }
 
     
     onViewAllQuerry = () => {
 
-        // make call to server
         this.makeApiCall();
-
-        //
         this.setState({sortedRecord:[], showSortingPanel:true,showSummaryView:false})
 
     }
@@ -45,7 +38,7 @@ class App extends React.Component {
         this.setState({sortedRecord:[], showSortingPanel:true,showSummaryView:true});
     }
 
-    //function to handle api call
+
     makeApiCall = async (term='', resultPerPage=20, pageNumber='') => {
         try {
                 
@@ -78,7 +71,7 @@ class App extends React.Component {
     
             this.setState({ currentPage: pageNumber} );
         };
-        //function to handle sorting
+
     sortRecord = (sortBy, sortOrder) => {
 
 
@@ -120,7 +113,7 @@ class App extends React.Component {
          this.setState({sortedRecord:sortRecord})
         
     }
-        
+
     onShipmentNameUpdate = () => {
 
         //update the records array with new change

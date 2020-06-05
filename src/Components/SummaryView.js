@@ -8,41 +8,41 @@ export default class SummaryView extends Component {
 
             <div>
             <hr/>
-                <div class="ui grid center aligned">
-                    <div class=" two wide column">
-                        <div class=" center aligned content">
-                            <div class="description">{this.props.shipmentId}</div>
+                <div className="ui grid center aligned">
+                    <div className=" two wide column">
+                        <div className=" center aligned content">
+                            <div className="description">{this.props.shipmentId}</div>
                         </div>
                     </div>
                     
-                    <div class=" two wide column">
-                        <div class="content">
-                            <div class="description">{this.props.status}</div>
+                    <div className=" two wide column">
+                        <div className="content">
+                            <div className="description">{this.props.status}</div>
                         </div>
                     </div>
-                    <div class=" one wide column">
-                        <div class="content">
-                            <div class="description">{this.props.bookingType}</div>
+                    <div className=" one wide column">
+                        <div className="content">
+                            <div className="description">{this.props.bookingType}</div>
                         </div>
                     </div>
-                    <div class=" one wide column">
-                        <div class="content">
-                            <div class="description" >{this.props.mode}</div>
+                    <div className=" one wide column">
+                        <div className="content">
+                            <div className="description" >{this.props.mode}</div>
                         </div>
                     </div>
-                    <div class=" four wide column">
-                        <div class="content">
-                            <div class="description">{this.props.shipmentName}</div>
+                    <div className=" four wide column">
+                        <div className="content">
+                            <div className="description">{this.props.shipmentName}</div>
                         </div>
                     </div>
-                    <div class=" two wide column">
-                        <div class="content">
-                            <div class="description">{this.props.origin}</div>
+                    <div className=" two wide column">
+                        <div className="content">
+                            <div className="description">{this.props.origin}</div>
                         </div>
                     </div>
-                    <div class=" three wide column">
-                        <div class="content margin-adjust">
-                            <div class="description">{this.props.destination}</div>
+                    <div className=" three wide column">
+                        <div className="content margin-adjust">
+                            <div className="description">{this.props.destination}</div>
                         </div>
                     </div>
                 </div>
