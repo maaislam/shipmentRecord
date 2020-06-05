@@ -2,9 +2,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+
+<h2>Please Remember, if you are running the app for the first time you need to run `npm install` before you can run `npm run start`</h2>
+
 In the project directory, you can run:
 
 ### `npm run start`
+
+
+
+
+
 
 Runs the app in the development mode.<br />
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
