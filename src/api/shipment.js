@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const shipment = axios.create({
 
-    baseURL: 'http://localhost:5000/shipments',
+    baseURL: 'http://localhost:3000/shipments',
     headers: {
         
     }

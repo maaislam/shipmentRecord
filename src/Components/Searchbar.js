@@ -50,15 +50,15 @@ export default class Searchbar extends Component {
                 <div className="ui segment fluid input searchbar-item">
                     <input 
                     type="text" 
-                    pattern="(S|s)[0-9]{4,}"
-                    placeholder="Search By Shipment ID..."
+                    //pattern="(S|s)[0-9]{4,}" --- uncomment if strictly search by ID alone is required
+                    placeholder="Search by shipment ID or any detail..."
                     value = {this.state.searchTerm}
                     onChange = {this.onInputChange}
                     onKeyUp = {this.onKeyPress} />
                     
-                    <button className="ui blue button" onClick = {this.onSearchPress}>Search By ID</button>
-                    <button className="ui green button" onClick = {this.onViewAllPress}>View Full Record</button>
-                    <button className="ui brown button" onClick = {this.onViewSummaryPress}>View Summary</button>
+                    <button className="ui blue button" onClick = {this.onSearchPress}>Search</button>
+                    <button className="ui green button" onClick = {this.onViewAllPress}>Detailed View</button>
+                    <button className="ui brown button" onClick = {this.onViewSummaryPress}>Summary View</button>
                      
                 </div>
             </div>

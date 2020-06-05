@@ -209,8 +209,8 @@ export default class RecordGrid extends Component {
                     
                 </div>
 
-                <div onClick = {this.showMore} className = "fourteen wide center aligned centered column">
-                    <button className ="ui icon teal button center">
+                <div  className = "fourteen wide center aligned centered column">
+                    <button onClick = {this.showMore} className ="ui icon teal button center">
                         {this.toggleShowMoreBtn()}
                     </button>
                 </div>   
