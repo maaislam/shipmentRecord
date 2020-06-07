@@ -21,7 +21,7 @@ class App extends React.Component {
             
                 this.makeApiCall(term);
 
-                this.setState({searchTerm:term, sortedRecord:[]})
+                this.setState({searchTerm:term, sortedRecord:[], currentPage:1})
             }
         }
 
