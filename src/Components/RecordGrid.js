@@ -76,7 +76,7 @@ export default class RecordGrid extends Component {
                     name:newName
                 
                 
-            }) 
+            });
 
 
             

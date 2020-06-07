@@ -21,7 +21,7 @@ class App extends React.Component {
             
                 this.makeApiCall(term);
 
-                this.setState({ searchTerm:term,sortedRecord:[]})
+                this.setState({searchTerm:term, sortedRecord:[]})
             }
         }
 
@@ -29,13 +29,13 @@ class App extends React.Component {
     onViewAllQuerry = () => {
 
         this.makeApiCall();
-        this.setState({sortedRecord:[], showSortingPanel:true,showSummaryView:false})
+        this.setState({sortedRecord:[], showSortingPanel:true,showSummaryView:false,searchTerm:''})
 
     }
 
     onViewSummaryPress = () => {
         this.makeApiCall();
-        this.setState({sortedRecord:[], showSortingPanel:true,showSummaryView:true});
+        this.setState({sortedRecord:[], showSortingPanel:true,showSummaryView:true,searchTerm:''});
     }
 
 
@@ -53,7 +53,7 @@ class App extends React.Component {
 
             }); 
 
-
+            console.log(response)
             this.setState({records:response.data, totalResults:response.data.length})
            
             
@@ -66,9 +66,11 @@ class App extends React.Component {
         }
 
         nextPage = (pageNumber) => {
+            
            
+
             this.makeApiCall(this.state.searchTerm,20,pageNumber);
-    
+            
             this.setState({ currentPage: pageNumber} );
         };
 

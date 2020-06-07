@@ -4,12 +4,15 @@ export default class DetailsBlock extends Component {
 
     checkProps = () => {
 
+        
+
         if (this.props.children){
            
             return (
                 <div className = "record-item">
                     
                     <h4>{this.props.name}</h4>
+
                     <span>{this.props.value}</span>
                     {this.props.children}
 

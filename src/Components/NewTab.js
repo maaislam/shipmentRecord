@@ -22,7 +22,7 @@ export default class NewTab extends Component {
             return (
             
                 <div  onClick = {this.newTab} className="ui right floated new-window" >
-                        <button className="ui teal button"><i class="window restore icon"></i></button>
+                        <button className="ui teal button"><i className="window restore icon"></i></button>
                 </div>
             )
         }else {
